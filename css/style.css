@@ -8,6 +8,8 @@
     --light-grey: #F8F8F8;
     --black-gray: #5D5D5D;
     --red: #F26376;
+    --grey-light: #E1E1E1;
+    --grey-midle: #6F6E6E;
 }
 
 body {
@@ -45,6 +47,7 @@ body {
     justify-content: space-between;
     min-height: 75px;
     align-items: center;
+    position: relative;
 }
 
 .header__list {
@@ -59,18 +62,92 @@ body {
     margin: 0 0 0 34px;
 }
 
-.header__nav {
-    display: none;
-}
-
 .header__button {
     border: none;
     background-color: transparent;
 }
 
+.header__burger-icon {
+    fill: var(--white);
+}
+
+.header__burger-icon:hover,
+.header__burger-icon:focus {
+    fill: var(--black-gray);
+}
+
+.header__burger-icon:active {
+    fill: var(--dark-pink);
+}
+
+
+.header__nav {
+    z-index: 2;
+    position: absolute;
+    width: 232px;
+    top: 100%;
+    right: 0;
+    background: white;
+    display: none;
+}
+
+.header__nav-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header__button:hover +.header__nav,
+.header__button:focus +.header__nav {
+    display: block;
+}
+
+.header__nav:hover {
+    display: block;
+}
+
+.header__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--black);
+    text-transform: uppercase;
+    padding: 37px 0 24px 34px;
+}
+
+.nav-sub-item__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--dark-pink);
+    text-transform: uppercase;  
+    padding: 0 0 12px 33px;
+    text-decoration: none;
+}
+
+.nav-sub-item__item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--grey-midle);
+    padding: 0 0 11px 27px;
+    text-decoration: none;
+}
+
+.nav-sub-item__item:hover {
+    color: var(--red);
+    cursor: pointer;
+}
+
 .brand {
     display: flex;
     margin: 0 0 62px 0;
+    background-color: var(--light-pink);
+}
+
+.brand__centr {
+    display: flex;
+    margin-left: -224px;
 }
 
 .brand__title-wrp {
@@ -78,14 +155,27 @@ body {
     padding: 0 0 0 92px;
     display: flex;
     align-items: center;
-    background-color: var(--light-pink);
 }
 
 .brand__title {
+    z-index: 1;
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase;
+    display: block;
+    position: relative;
+    margin: 20px;
+}
+
+.brand__title:before {
+    content: '';
+    width: 12px;
+    height: 92px;
+    position: absolute;
+    background-color: var(--dark-pink);
+    left: -28px;
+    top: 5px;
 }
 
 .brand__subtitle {
@@ -191,6 +281,66 @@ body {
     background-color: var(--light-grey);
 }
 
+/*Новый код*/
+
+.catalog__wrapper {
+    position: relative;
+}
+
+.catalog__overlay {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.catalog__button {
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 139px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    padding: 15px 0;
+    text-decoration: none;
+    border: 2px solid var(--white);
+    background: rgba(0, 0, 0, 0.4);
+    
+}
+
+
+.catalog__button,
+.catalog__overlay {
+    display: none;
+}
+
+.catalog__item:hover .catalog__button,
+.catalog__item:hover .catalog__overlay {
+    display: block;
+} 
+
+.catalog__button:hover,
+.catalog__button:focus {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.catalog__button:active {
+    opacity: 1;
+}
+
+/*конец нового кода*/
+
 .catalog__item-title {
     padding: 24px 0 12px 18px;
     font-weight: 400;
@@ -216,7 +366,7 @@ body {
     color: var(--dark-pink);
 }
 
-.catalog__button {
+.catalog__button-all {
     width: 212px;
     margin: 0 auto;
     display: flex;
@@ -225,10 +375,23 @@ body {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.04em;
-    color: var(--red);
+    color: var(--white);
     padding: 15px 0;
     text-decoration: none;
+    background-color: var(--dark-pink);
     border: 2px solid var(--red); 
+}
+
+.catalog__button-all:focus,
+.catalog__button-all:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.catalog__button-all:active {
+    opacity: 1;
+    outline: 3px solid var(--black);
 }
 
 .aside {
@@ -271,7 +434,9 @@ body {
 }
 
 .footer__main {
+    width: 1600px;
     min-height: 448px;
+    margin: 0 auto;
     display: flex;
     align-items: center; 
     background-image: url(../img/footer__pic.jpg);
@@ -326,8 +491,72 @@ body {
     text-transform: uppercase;
 }
 
-.subscribe__form {
-   
+.subscribe__sub {
+    padding-top: 32px;
+    padding-left: 107px;
+}
+
+.subscribe__label {
+    margin: 0 0 0 -10px;
+}
+
+.subscribe__email {
+    margin: 0 0 0 0;
+    width: 256px;
+    height: 49px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    background: var(--grey-light);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.input:hover,
+.input:focus {
+    color: var(--red);
+    cursor: pointer;
+}
+
+.input:active {
+    color: var(--grey);
+}
+
+.subscribe__button {
+    width: 100px;
+    height: 49px;
+    -webkit-border-top-right-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+    -moz-border-radius-topright: 20px;
+    -moz-border-radius-bottomright: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    background: var(--dark-pink);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--white);
+    margin-left: -3px;
+}
+
+.subscribe__button:focus,
+.subscribe__button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.subscribe__button:active {
+    opacity: 1;
 }
 
 .footer__arr-social {
@@ -347,4 +576,135 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: var(--white);
+}
+
+.registration {
+    height: 89px;
+    background-color: var(--light-grey);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--dark-pink);
+    text-transform: uppercase;
+    padding-top: 59px;
+}
+
+.registration__form {
+    padding: 64px 0 96px 0;
+    display: flex;
+}
+
+.registration__legend {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--black);
+    padding-bottom: 20px;
+}
+
+.reg__field {
+    padding: 12px;
+    width: 360px;
+    margin-bottom: 20px;
+}
+
+.choice__sex {
+    padding: 11px 0 33px 0;
+}
+
+.reg__text {
+    width: 360px;
+    padding: 21px 0 33px 0;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--grey);
+}
+
+.join__button {
+    width: 167px;
+    padding: 15px;
+    background-color: var(--dark-pink);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    position: relative;
+    
+}
+
+.join__button::after {
+    content: '';
+    background-image: url(../img/strelka.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 70%;
+    left: 130px;
+    bottom: auto;
+    right: auto;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+}
+
+.join__button:hover,
+.join__button:focus {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.join__button:active {
+    opacity: 1;
+}
+
+.reg__right {
+    padding: 0 0px 0px 103px;
+}
+
+
+.loyalty__title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--black);
+    text-transform: uppercase;
+    padding: 0 0 22px 0;
+}
+.loyalty__text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--black);
+    padding-bottom: 5px;
+}
+
+.loyalty__list {
+    margin: 0;
+    list-style: none;
+}
+
+.loyalty__list-item {
+    position: relative;
+    left: 25px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--black);
+    margin-top: 16px;
+}
+
+.loyalty__list-item::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    /*background: rgba(0, 0, 0, 0.2);*/
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    background-image: url(../img/galka.png);
+    background-size: 15px 15px;
 }
