@@ -107,59 +107,60 @@
     <main>
         <section class="registration">
             <div class="container">
-                <h1>registration</h1>
+                <h1>shopping cart</h1>
             </div>
         </section>
-        <div class="registration__form container">
-            <form class="reg__left">
-                <fieldset>
-                    <legend class="registration__legend">Your Name</legend>
-                    <label>
-                        <span class="visually-hidden">First Name</span>
-                        <input class="reg__field" type="text" required placeholder="First Name"> <br>
-                    </label>
-                    <label>
-                        <span class="visually-hidden">Last Name</span>
-                        <input class="reg__field" type="text" required placeholder="Last Name">
-                    </label>
-                </fieldset>
-                <div class="choice__sex">
-                    <input type="radio" name="sex" id="sexchoice1" value="male">
-                    <label for="sexchoice1">Male</label>
-                    <input type="radio" name="sex" id="sexchoice2" value="female">
-                    <label for="sexchoice2">Female</label>
+    </main>
+    <div class="shopping__cart-form container">
+        <div class="shopping__cart-wrp">
+            <div class="shopping__carts">
+                <div class="shopping__cart-item">
+                    <img src="./img/Shopcartman1.jpg" alt="shopcartman1">
+                    <div class="shopping__cart-cart">
+                        <h1 class="shopping__cart-title">mango people t-shirt</h1>
+                        <p class="shopping__cart-price">Price: <span class="shopping__cart-price-pink"> $300</span></p>
+                        <p class="shopping__cart-color">Color: <span class="shopping__cart-color-grey"> Red</span></p>
+                        <p class="shopping__cart-size">Size: <span class="shopping__cart-size-grey"> Xl</span></p>
+                        <div class="quantity">
+                            <p class="shopping__cart-quantity">Quantity:</p>
+                            <input class="input__quantity" type="number" name="quantity">
+                        </div>
+                    </div>
                 </div>
-                <fieldset>
-                    <legend class="registration__legend">Login details</legend>
-                    <label>
-                        <span class="visually-hidden">Email</span>
-                        <input class="reg__field" type="email" required placeholder="Email"><br>
-                    </label>
-                    <label>
-                        <span class="visually-hidden">Password</span>
-                        <input class="reg__field" type="password" required placeholder="Password">
-                    </label>
-                </fieldset>
-                <p class="reg__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase
-                    and
-                    lowercase letters
-                </p>
-                <button class="join__button" type="submit">join now</button>
-            </form>
-            <div class="reg__right">
-                <h1 class="loyalty__title">loyalty has its perks</h1>
-                <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious
-                    perks. Starting with these as soon as you join:</p>
-                <ul class="loyalty__list">
-                    <li class="loyalty__list-item">15% off welcome offer</li>
-                    <li class="loyalty__list-item">Free shipping, returns and exchanges on all orders</li>
-                    <li class="loyalty__list-item">$10 off a purchase on your birthday</li>
-                    <li class="loyalty__list-item">Early access to products</li>
-                    <li class="loyalty__list-item">Exclusive offers & rewards</li>
-                </ul>
+                <div class="shopping__cart-item">
+                    <img src="./img/Shopcartman2.jpg" alt="shopcartman1">
+                    <div class="shopping__cart-cart">
+                        <h1 class="shopping__cart-title">mango people t-shirt</h1>
+                        <p class="shopping__cart-price">Price: $300</p>
+                        <p class="shopping__cart-color">Color: Red</p>
+                        <p class="shopping__cart-size">Size: Xl </p>
+                        <div class="quantity">
+                            <p class="shopping__cart-quantity">Quantity:</p>
+                            <input class="input__quantity" type="number" name="quantity" id="">
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping__buttons">
+                    <button class="shopping__clear-button">clear shopping cart</button>
+                    <button class="shopping__continue-button">continue shoping</button>
+                </div>
+            </div>
+            <div class="shipping__total">
+                <div class="shipping__adress">
+                    <h1 class="shipping__adress-title">shipping adress</h1>
+                    <input class="shipping__adress-country" type="text" required placeholder="Country"><br>
+                    <input class="shipping__adress-state" type="text" required placeholder="State"><br>
+                    <input class="shipping__adress-postcode" type="text" required placeholder="Postcode / Zip"><br>
+                    <button class="button__quote">get a quote</button>
+                </div>
+                <div class="grand__total">
+                    <p class="sub__total">sub total $900</p>
+                    <p class="total">grand total <span class="shopping__cart-price-pink"> $900</span></p>
+                    <button class="button__checkout">proceed to checkout</button>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
     <footer class="footer">
         <div class="footer__main">
             <div class="container">
@@ -180,7 +181,6 @@
                                     <input class="subscribe__email" type="email" required
                                         placeholder="   Enter Your Email">
                                 </label>
-
                                 <button class="subscribe__button" type="submit">Subscribe</button>
                             </form>
                         </div>
