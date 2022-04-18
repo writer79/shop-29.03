@@ -1,14 +1,14 @@
 .footer__main {
-    width: 1600px;
-    min-height: 448px;
     margin: 0 auto;
     display: flex;
     align-items: center; 
     background-image: url(../img/footer__pic.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer__main-hlp {
+    min-height: 448px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,6 +17,12 @@
 .girl__face {
     width: 360px;
     height: 225px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 .footer__img {
@@ -141,4 +147,13 @@
     font-size: 16px;
     line-height: 19px;
     color: $white;
+}
+
+@media (max-width: $desktop-width) {
+    .footer__main-hlp {
+        flex-direction: column;
+        min-height: 693px;
+        padding: 64px 0 140px;
+        box-sizing: border-box;
+    }
 }

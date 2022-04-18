@@ -10,6 +10,44 @@
     position: relative;
 }
 
+.header__flex {
+    display: flex;
+}
+
+.header__form {
+    display: flex;
+    width: 28px;
+    position: relative;
+}
+
+.header__form:before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-image: url(../img/loupe.svg);
+    background-size: 28px 28px;
+}
+
+.header__search {
+    display: flex;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 30px;
+    border-radius: 17px;
+    padding: 15px 35px;
+}
+
+.header__search:hover,
+.header__search:focus {
+    background: white;
+}
+
 .header__list {
     display: flex;
 }
@@ -39,7 +77,6 @@
 .header__burger-icon:active {
     fill: $dark-pink;
 }
-
 
 .header__nav {
     z-index: 2;
@@ -73,4 +110,10 @@
     color: $black;
     text-transform: uppercase;
     padding: 37px 0 24px 34px;
+}
+
+@media (max-width: $tablet-width) {
+.header__link {
+    display: none;
+}
 }
