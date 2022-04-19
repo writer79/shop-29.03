@@ -1,0 +1,49 @@
+.brand {
+    display: flex;
+    margin: 0 0 62px 0;
+    background-color: $light-pink;
+}
+
+.brand__centr {
+    display: flex;
+    margin-left: -224px;
+}
+
+.brand__title-wrp {
+    flex-grow: 1;
+    padding: 0 0 0 92px;
+    display: flex;
+    align-items: center;
+}
+
+.brand__title {
+    z-index: 1;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    margin: 20px;
+}
+
+.brand__title:before {
+    content: '';
+    width: 12px;
+    height: 92px;
+    position: absolute;
+    background-color: $dark-pink;
+    left: -28px;
+    top: 5px;
+}
+
+.brand__subtitle {
+    display: block;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.brand__subtitle-pink {
+    color: $dark-pink;
+}

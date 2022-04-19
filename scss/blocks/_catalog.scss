@@ -1,0 +1,145 @@
+.catalog {
+    padding-bottom: 95px;
+}
+
+.catalog__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.catalog__text {
+    padding: 0 0 48px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grey;
+    text-align: center;
+}
+
+.catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.catalog__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 32px;
+    box-sizing: border-box;
+    width: 360px;
+    min-height: 260px;
+    background-color: $light-grey;
+}
+
+.catalog__wrapper {
+    position: relative;
+}
+
+.catalog__overlay {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.catalog__button {
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 139px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    color: $white;
+    padding: 15px 0;
+    text-decoration: none;
+    border: 2px solid $white;
+    background: rgba(0, 0, 0, 0.4);
+    
+}
+
+
+.catalog__button,
+.catalog__overlay {
+    display: none;
+}
+
+.catalog__item:hover .catalog__button,
+.catalog__item:hover .catalog__overlay {
+    display: block;
+} 
+
+.catalog__button:hover,
+.catalog__button:focus {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.catalog__button:active {
+    opacity: 1;
+}
+
+.catalog__item-title {
+    padding: 24px 0 12px 18px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: $black;
+    text-transform: uppercase;
+}
+
+.catalog__item-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black-gray;
+    padding: 0 0 0 18px;
+}
+
+.catalog__price {
+    padding: 18px 0 20px 18px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $dark-pink;
+}
+
+.catalog__button-all {
+    width: 212px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    color: $white;
+    padding: 15px 0;
+    text-decoration: none;
+    background-color: $dark-pink;
+    border: 2px solid $red; 
+}
+
+.catalog__button-all:focus,
+.catalog__button-all:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    outline: none;
+}
+
+.catalog__button-all:active {
+    opacity: 1;
+    outline: 3px solid $black;
+}
