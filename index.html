@@ -17,9 +17,14 @@
 <body>
     <header class="header">
         <div class="container header__wrp">
-            <div>
-                <img class="header__logo" src="./img/logo.png" alt="icon">
-                <img class="header__loupe" src="./img/loupe.svg" alt="loupe">
+            <div class="header__flex">
+                <a class="header__logo" href="#">
+                    <img src="./img/logo.png" alt="icon">
+                </a>
+                <form class="header__form" action="#">
+                    <label class="visually-hidden" for="search">Search</label>
+                    <input class="header__search input" type="search" id="search" placeholder="Search">
+                </form>
             </div>
             <ul class="header__list">
                 <li class="header__item">

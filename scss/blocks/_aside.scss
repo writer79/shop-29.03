@@ -36,3 +36,20 @@
     text-align: center;
     color: $white;
 }
+
+@media (max-width: $desktop-width) {
+    .aside__list {
+        flex-wrap: wrap;
+        min-height: 610px;
+        width: 360px;
+        padding-left: 190px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .aside__list {
+        flex-wrap: wrap;
+        width: 347px;
+        padding-left: 0px;
+    }
+}
