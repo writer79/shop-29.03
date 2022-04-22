@@ -2,11 +2,14 @@
     display: flex;
     margin: 0 0 62px 0;
     background-color: $light-pink;
+
+    @include tablet {
+        min-height: 370px;
+    }
 }
 
 .brand__centr {
     display: flex;
-    margin-left: -224px;
 }
 
 .brand__title-wrp {
@@ -17,11 +20,14 @@
 }
 
 .brand__img {
+    width: 50%;
+    margin-left: -60px;
     @include tablet {
         width: 50%;
         min-height: 370px;
         object-fit: cover;
     }
+   
     @include mobile {
         display: none;
     }
@@ -39,7 +45,7 @@
     }
     @include mobile {
         @include font(38px, 46px, 900);
-        padding-left: 176px;
+        margin-left: -20px;
     }
 }
 
@@ -71,9 +77,9 @@
 
 @media (max-width: $tablet-width) {
     
-    .brand {
+    /*.brand {
         min-height: 370px;
-    }
+    }*/
 
     .brand__centr {
         margin-top: 115px;
@@ -87,6 +93,5 @@
         background-color: $dark-pink;
         left: -28px;
         top: 5px;
-        margin-left: 176px;
-    }
+        }
     }
