@@ -14,8 +14,15 @@
     <header class="header">
         <div class="container header__wrp">
             <div>
-                <img class="header__logo" src="./img/logo.png" alt="icon">
-                <img class="header__loupe" src="./img/loupe.svg" alt="loupe">
+                <div class="header__flex">
+                    <a class="header__logo" href="./index.html">
+                        <img src="./img/logo.png" alt="icon">
+                    </a>
+                    <form class="header__form" action="#">
+                        <label class="visually-hidden" for="search">Search</label>
+                        <input class="header__search input" type="search" id="search" placeholder="Search">
+                    </form>
+                </div>
             </div>
             <ul class="header__list">
                 <li class="header__item">
@@ -97,7 +104,7 @@
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href=" #" class="header__link">
+                    <a href="./shopingcart.html" class="header__link">
                         <img src="./img/basket.svg" alt="basket">
                     </a>
                 </li>

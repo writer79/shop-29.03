@@ -30,9 +30,14 @@
     justify-content: center;
     margin: 0 0 32px;
     box-sizing: border-box;
-    width: 360px;
+    /*width: 360px;*/
+    width: 31.6%;
     min-height: 260px;
     background-color: $light-grey;
+}
+
+.catalog__item-image {
+    width: 100%;
 }
 
 .catalog__wrapper {
@@ -142,4 +147,16 @@
 .catalog__button-all:active {
     opacity: 1;
     outline: 3px solid $black;
+}
+
+@media (max-width: $desktop-width) {
+    .catalog__item {
+        width: 45%;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .catalog__item {
+        width: 100%;
+    }
 }

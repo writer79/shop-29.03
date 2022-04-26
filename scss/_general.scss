@@ -7,8 +7,16 @@ body {
 }
 
 .container {
-    width: 1140px;
+    width: 71.3%;
     margin: 0 auto;
+
+   /* @include tablet {
+        width: 95.6%;
+    }
+
+    @include mobile {
+        width: 91.5%;
+    }*/
 }
 
 .visually-hidden {
@@ -24,7 +32,7 @@ body {
     margin: -1px;
 }
 
-@media (max-width: $desktop-width) {
+/*@media (max-width: $desktop-width) {
     .container {
         width: 734px;
     }
@@ -33,5 +41,17 @@ body {
 @media (max-width: $tablet-width) {
     .container {
         width: 343px;
+    }   
+}*/
+
+@media (max-width: $desktop-width) {
+    .container {
+        width: 95.6%;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .container {
+        width: 91.6%;
     }   
 }
