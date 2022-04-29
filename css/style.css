@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato-bold.woff2") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato-italic.woff2") format("woff2"), url("../fonts/lato-italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato-light.woff2") format("woff2"), url("../fonts/lato-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -394,9 +422,6 @@ body {
 }
 
 @media (max-width: 767px) {
-  /*.brand {
-        min-height: 370px;
-    }*/
   .brand__centr {
     margin-top: 115px;
   }
@@ -1313,5 +1338,86 @@ body {
   border: none;
   margin-top: 37px;
   margin-left: 58px;
+}
+
+.product {
+  height: 148px;
+  background-color: #F8F8F8;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F16D7F;
+  text-transform: uppercase;
+  padding-top: 47px;
+}
+
+.product__choose {
+  padding: 85px 0 87px 0;
+  width: 642px;
+  min-height: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.product__choose-colname {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+
+.product__line-one {
+  margin: 0 auto;
+  border: 1px solid;
+  color: #EF5B70;
+  height: 1px;
+  width: 63px;
+  opacity: 1;
+}
+
+.product__choose-name {
+  padding-top: 12px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.product__choose-description {
+  margin: 0 auto;
+  padding-top: 48px;
+  width: 540px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.product__choose-price {
+  padding-top: 32px;
+  padding-bottom: 64px;
+  color: #EF5B70;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.product__choose-type {
+  padding-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
