@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="./css/rerset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
     <header class="header">
         <div class="container header__wrp">
             <div class="header__flex">
-                <a class="header__logo" href="#">
+                <a class="header__logo" href="./index.html">
                     <img src="./img/logo.png" alt="icon">
                 </a>
                 <form class="header__form" action="#">
@@ -36,10 +38,10 @@
                         <h2 class="header__title">menu</h2>
                         <ul class="header__nav-list">
                             <li class="header__nav-item">
-                                <a class="nav-sub-item__title" href="./catalog.html">man</a>
+                                <h3 class="nav-sub-item__title" href="#">man</h3>
                                 <ul class="nav-sub-item__list">
                                     <li class="nav-sub-item__item">
-                                        <a class="nav-sub-item__item" href="./catalog.html">Accessories</a>
+                                        <a class="nav-sub-item__item" href="#">Accessories</a>
                                     </li>
                                     <li class="nav-sub-item__item">
                                         <a class="nav-sub-item__item" href="#">Bags</a>
@@ -112,46 +114,26 @@
         </div>
     </header>
     <main>
-        <section class="brand">
+        <section class="product">
             <div class="container">
-                <div class="brand__centr">
-                    <img class="brand__img" src="./img/main-man.png" alt="main-man">
-                    <div class="brand__title-wrp">
-                        <h1 class="brand__title">the brend <span class="brand__subtitle">of luxerious <span
-                                    class="brand__subtitle-pink">fashion</span></span></h1>
-                    </div>
+                <div class="product__wrp">
+                    <h1 class="product__page-title">new arrivals</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class=" product__page-list breadcrumb">
+                            <li class="breadcrumb-item"><a class="product__page-link link" href="./index.html">home</a>
+                            </li>
+                            <li class="breadcrumb-item"><a class="product__page-link link" href="#">men</a></li>
+                            <li class="breadcrumb-item" aria-current="page">new arrivals</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
         </section>
-        <section class="sales">
-            <div class="container">
-                <h2 class="visually-hidden" aria-hidden="true" tabindex="-1">sales</h2>
-                <ul class="sales__list">
-                    <li class="sales__item sales__item--woman">
-                        <p class="sales__text">30% off</p>
-                        <h3 class="sales__title">for woman</h3>
-                    </li>
-                    <li class="sales__item sales__item--man">
-                        <p class="sales__text">hot deal</p>
-                        <h3 class="sales__title">for man</h3>
-                    </li>
-                    <li class="sales__item sales__item--kids">
-                        <p class="sales__text">new arrivals</p>
-                        <h3 class="sales__title">for kids</h3>
-                    </li>
-                    <li class="sales__item sales__item--shoes">
-                        <p class="sales__text">luxirous & trendy</p>
-                        <h3 class="sales__title">accesories</h3>
-                    </li>
-                </ul>
-            </div>
-        </section>
+
         <section class="catalog">
             <div class="container">
-                <h2 class="catalog__title">Fetured Items</h2>
-                <p class="catalog__text">Shop for items based on what we featured in this week</p>
-                <ul class="catalog__list">
-                    <li class="catalog__item">
+                <ul class="catalog__list-grid">
+                    <li class="catalog__item-grid">
                         <div class="catalog__wrapper">
                             <img class="catalog__item-image" src="./img/product1.jpg" alt="product1">
                             <div class="catalog__overlay"></div>
@@ -165,7 +147,7 @@
                             teams up with Moda Operandi.</p>
                         <p class="catalog__price">$52.00</p>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item-grid">
                         <div class="catalog__wrapper">
                             <img class="catalog__item-image" src=" ./img/product2.jpg" alt="product2">
                             <div class="catalog__overlay"></div>
@@ -179,7 +161,7 @@
                             teams up with Moda Operandi.</p>
                         <p class="catalog__price">$52.00</p>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item-grid">
                         <div class="catalog__wrapper">
                             <img class="catalog__item-image" src=" ./img/product3.jpg" alt="product3">
                             <div class="catalog__overlay"></div>
@@ -193,7 +175,7 @@
                             teams up with Moda Operandi.</p>
                         <p class="catalog__price">$52.00</p>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item-grid">
                         <div class="catalog__wrapper">
                             <img class="catalog__item-image" src=" ./img/product4.jpg" alt="product4">
                             <div class="catalog__overlay"></div>
@@ -207,7 +189,7 @@
                             teams up with Moda Operandi.</p>
                         <p class="catalog__price">$52.00</p>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item-grid">
                         <div class="catalog__wrapper">
                             <img class="catalog__item-image" src=" ./img/product5.jpg" alt="product5">
                             <div class="catalog__overlay"></div>
@@ -221,7 +203,7 @@
                             teams up with Moda Operandi.</p>
                         <p class="catalog__price">$52.00</p>
                     </li>
-                    <li class="catalog__item">
+                    <li class="catalog__item-grid">
                         <div class="catalog__wrapper">
                             <img class="catalog__item-image" src=" ./img/product6.jpg" alt="product6">
                             <div class="catalog__overlay"></div>
@@ -235,12 +217,65 @@
                             teams up with Moda Operandi.</p>
                         <p class="catalog__price">$52.00</p>
                     </li>
+                    <li class="catalog__item-grid">
+                        <div class="catalog__wrapper">
+                            <img class="catalog__item-image" src="./img/product1.jpg" alt="product1">
+                            <div class="catalog__overlay"></div>
+                            <button class="catalog__button">Add to cart</button>
+                        </div>
+                        <h3 class="catalog__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter
+                            of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog__price">$52.00</p>
+                    </li>
+                    <li class="catalog__item-grid">
+                        <div class="catalog__wrapper">
+                            <img class="catalog__item-image" src=" ./img/product2.jpg" alt="product2">
+                            <div class="catalog__overlay"></div>
+                            <button class="catalog__button">Add to cart</button>
+                        </div>
+                        <h3 class="catalog__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter
+                            of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog__price">$52.00</p>
+                    </li>
+                    <li class="catalog__item-grid">
+                        <div class="catalog__wrapper">
+                            <img class="catalog__item-image" src=" ./img/product3.jpg" alt="product3">
+                            <div class="catalog__overlay"></div>
+                            <button class="catalog__button">Add to cart</button>
+                        </div>
+                        <h3 class="catalog__item-title">ellery x m'o capsule</h3>
+                        <p class="catalog__item-text">Known for her sculptural takes on traditional tailoring,
+                            Australian
+                            arbiter
+                            of cool Kym Ellery
+                            teams up with Moda Operandi.</p>
+                        <p class="catalog__price">$52.00</p>
+                    </li>
                 </ul>
-                <form action="./product.html">
-                    <button class="catalog__button-all" type="submit">Browse All Product</button>
-                </form>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </section>
+
         <section class="aside">
             <div class="container">
                 <ul class=" aside__list">
@@ -311,6 +346,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

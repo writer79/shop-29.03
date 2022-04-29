@@ -17,6 +17,11 @@
     text-decoration: none;
 }
 
+.nav-sub-item__title:hover {
+    color: $grey;
+    cursor: pointer;
+}
+
 .nav-sub-item__item:hover {
     color: $red;
     cursor: pointer;
