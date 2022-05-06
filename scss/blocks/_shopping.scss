@@ -30,6 +30,18 @@
     padding-bottom: 42px;
 }
 
+.shoping__cart-close {
+    top: 24px;
+    right: -52px;
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    background-image: url(../img/close.svg);
+    background-size: 18px 18px;
+}
+
 .shopping__cart-price {
     font-weight: 400;
     font-size: 22px;
