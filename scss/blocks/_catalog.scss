@@ -180,8 +180,6 @@
     line-height: 17px;
     color: $black;
     text-transform: uppercase;
-    /*padding-top: 51px;
-    padding-bottom: 64px;*/
     margin-bottom: 0;
     border: none;
     background-color: $white;
@@ -378,6 +376,12 @@
     width: 100%;
     min-height: 260px;
     background-color: $light-grey;
+}
+
+@media (max-width: $desktop-width) {
+    .catalog__item-grid-none {
+        display: none;
+    }
 }
 
 .catalog__item-grid:hover .catalog__button,

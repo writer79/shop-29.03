@@ -137,3 +137,23 @@
 .product__catalog {
     padding: 129px 0 50px 0;
 }
+
+@media (max-width: $desktop-width) {
+    .product__item-none {
+        display: none;
+    }
+
+    .product__item-none1 {
+        order: -1;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .product__item-none {
+        display: block;
+    }
+
+    .product__item-none1 {
+        display: none;
+    }
+}
