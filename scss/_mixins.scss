@@ -22,3 +22,22 @@
         @content;
     }
 }
+
+@mixin tablet-mid {
+    @media (max-width: $tablet-mid-width) {
+        @content;
+    }
+}
+
+@mixin mobile-tablet-mid {
+    @media (max-width: $mobile-tablet-mid-width) {
+        @content;
+    }
+}
+
+@mixin mobile-mid {
+    @media (max-width: $mobile-mid-width) {
+        @content;
+    }
+}
+
