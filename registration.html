@@ -117,54 +117,58 @@
                 <h1>registration</h1>
             </div>
         </section>
-        <div class="registration__form container">
-            <form class="reg__left">
-                <fieldset>
-                    <legend class="registration__legend">Your Name</legend>
-                    <label>
-                        <span class="visually-hidden">First Name</span>
-                        <input class="reg__field" type="text" required placeholder="First Name"> <br>
-                    </label>
-                    <label>
-                        <span class="visually-hidden">Last Name</span>
-                        <input class="reg__field" type="text" required placeholder="Last Name">
-                    </label>
-                </fieldset>
-                <div class="choice__sex">
-                    <input type="radio" name="sex" id="sexchoice1" value="male">
-                    <label for="sexchoice1">Male</label>
-                    <input type="radio" name="sex" id="sexchoice2" value="female">
-                    <label for="sexchoice2">Female</label>
+        <div class="container">
+            <section class="registration__form">
+                <form class="reg__left">
+                    <fieldset class="registration__fieldset">
+                        <legend class="registration__legend">Your Name</legend>
+                        <label>
+                            <span class="visually-hidden">First Name</span>
+                            <input class="reg__field" type="text" required placeholder="First Name"> <br>
+                        </label>
+                        <label>
+                            <span class="visually-hidden">Last Name</span>
+                            <input class="reg__field" type="text" required placeholder="Last Name">
+                        </label>
+                        <div class="choice__sex">
+                            <input type="radio" name="sex" id="sexchoice1" value="male">
+                            <label for="sexchoice1">Male</label>
+                            <input type="radio" name="sex" id="sexchoice2" value="female">
+                            <label for="sexchoice2">Female</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="registration__fieldset">
+                        <legend class="registration__legend">Login details</legend>
+                        <label>
+                            <span class="visually-hidden">Email</span>
+                            <input class="reg__field" type="email" required placeholder="Email"><br>
+                        </label>
+                        <label>
+                            <span class="visually-hidden">Password</span>
+                            <input class="reg__field" type="password" required placeholder="Password">
+                        </label>
+                    </fieldset>
+                    <p class="reg__text">Please use 8 or more characters, with at least 1 number and a mixture of
+                        uppercase
+                        and
+                        lowercase letters
+                    </p>
+                    <button class="join__button" type="submit">join now</button>
+                </form>
+                <div class="reg__right">
+                    <h1 class="loyalty__title">loyalty has its perks</h1>
+                    <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious
+                        perks. Starting with these as soon as you join:</p>
+                    <ul class="loyalty__list">
+                        <li class="loyalty__list-item">15% off welcome offer</li>
+                        <li class="loyalty__list-item">Free shipping, returns and exchanges on all orders</li>
+                        <li class="loyalty__list-item">$10 off a purchase on your birthday</li>
+                        <li class="loyalty__list-item">Early access to products</li>
+                        <li class="loyalty__list-item">Exclusive offers & rewards</li>
+                    </ul>
                 </div>
-                <fieldset>
-                    <legend class="registration__legend">Login details</legend>
-                    <label>
-                        <span class="visually-hidden">Email</span>
-                        <input class="reg__field" type="email" required placeholder="Email"><br>
-                    </label>
-                    <label>
-                        <span class="visually-hidden">Password</span>
-                        <input class="reg__field" type="password" required placeholder="Password">
-                    </label>
-                </fieldset>
-                <p class="reg__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase
-                    and
-                    lowercase letters
-                </p>
-                <button class="join__button" type="submit">join now</button>
-            </form>
-            <div class="reg__right">
-                <h1 class="loyalty__title">loyalty has its perks</h1>
-                <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious
-                    perks. Starting with these as soon as you join:</p>
-                <ul class="loyalty__list">
-                    <li class="loyalty__list-item">15% off welcome offer</li>
-                    <li class="loyalty__list-item">Free shipping, returns and exchanges on all orders</li>
-                    <li class="loyalty__list-item">$10 off a purchase on your birthday</li>
-                    <li class="loyalty__list-item">Early access to products</li>
-                    <li class="loyalty__list-item">Exclusive offers & rewards</li>
-                </ul>
-            </div>
+            </section>
         </div>
     </main>
     <footer class="footer">

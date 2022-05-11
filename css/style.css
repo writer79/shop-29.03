@@ -1255,6 +1255,23 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reg__left {
+  width: 31.6%;
+}
+
+.registration__fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .registration__legend {
@@ -1267,7 +1284,7 @@ body {
 
 .reg__field {
   padding: 12px;
-  width: 360px;
+  max-width: 360px;
   margin-bottom: 20px;
 }
 
@@ -1325,6 +1342,7 @@ body {
 
 .reg__right {
   padding: 0 0px 0px 103px;
+  width: 57.2%;
 }
 
 .loyalty__title {
@@ -1368,6 +1386,28 @@ body {
   left: -25px;
   background-image: url(../img/galka.png);
   background-size: 15px 15px;
+}
+
+@media (max-width: 1599px) {
+  .reg__right {
+    width: 100%;
+    padding: 0px 0px 0px 23px;
+  }
+  .reg__left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .registration__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reg__right {
+    padding: 57px 0px 0px 0px;
+  }
 }
 
 .shopping__cart-form {
