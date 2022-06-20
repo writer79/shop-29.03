@@ -9,6 +9,61 @@
     text-align: center;
 }
 
+.catalog__basket {
+    position: relative;
+    cursor: pointer;
+}
+
+.catalog__basket span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: white;
+    background: #f16d7f;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    right: -8px;
+    top: -6px;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.basket {
+    position: absolute;
+    width: 500px;
+    z-index: 3;
+    right: 0;
+    top: 37px;
+    background: white;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+.basketHeader {
+    font-weight: bold;
+}
+
+.basketRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+}
+
+.basketTotal {
+    font-weight: bold;
+    text-align: right;
+}
+
 .catalog__text {
     padding: 0 0 48px 0;
     font-weight: 400;
@@ -54,7 +109,7 @@
 
 .catalog__button {
     position: absolute;
-    top: 50%;  
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 139px;
@@ -70,7 +125,7 @@
     text-decoration: none;
     border: 2px solid $white;
     background: rgba(0, 0, 0, 0.4);
-    
+
 }
 
 
@@ -82,7 +137,7 @@
 .catalog__item:hover .catalog__button,
 .catalog__item:hover .catalog__overlay {
     display: block;
-} 
+}
 
 .catalog__button:hover,
 .catalog__button:focus {
@@ -133,7 +188,7 @@
     padding: 15px 0;
     text-decoration: none;
     background-color: $dark-pink;
-    border: 2px solid $red; 
+    border: 2px solid $red;
 }
 
 .catalog__button-all:focus,
@@ -260,7 +315,7 @@
     cursor: pointer;
 }
 
-.catalog__line{
+.catalog__line {
     margin: 0 auto;
     color: #EAEAEA;
     height: 1px;
@@ -278,7 +333,7 @@
     left: 0;
     background: white;
     display: none;
-    box-shadow: 10px 10px 19px grey ;
+    box-shadow: 10px 10px 19px grey;
 }
 
 .catalog__menu-list {
@@ -300,10 +355,10 @@
 .catalog__menu-link:hover {
     color: $red;
     cursor: pointer;
-  }
+}
 
-.catalog__filter:hover +.catalog__menu,
-.catalog__filter:focus +.catalog__menu {
+.catalog__filter:hover+.catalog__menu,
+.catalog__filter:focus+.catalog__menu {
     display: block;
 }
 
@@ -387,7 +442,7 @@
 .catalog__item-grid:hover .catalog__button,
 .catalog__item-grid:hover .catalog__overlay {
     display: block;
-} 
+}
 
 @media (max-width: $desktop-width) {
     .catalog__list-grid {
